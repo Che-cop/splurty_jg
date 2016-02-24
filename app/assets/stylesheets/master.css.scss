@@ -15,10 +15,10 @@
     position: relative;
     border-radius: 100%;
     background: #f84342;
-    border: 1px solid #F7F7F7;
+    border: 1px solid black;
     width: 80px;
     height: 80px;
-    margin: 10px 10px;
+    margin: 10px 10px ;
     text-align: center;
     color: #FFF;
     font-size: 15px;
@@ -30,14 +30,13 @@
 }
 
 .slogan {
-  font-family: 'nexa_rust_slabblack_shadow_01';
-  font-size: 21px;
-  padding-top: 32px;
+  font-family: 'nexa_rust_slabblack_shadow_01', 'Passion One', cursive, 'sans-serif';
+   padding-top: 32px;
   text-align: center;
 }
 
 .links {
-  font-family: 'Passion One', cursive;
+  font-family: 'Passion One', cursive, 'sans-serif';
   padding-top: 28px;
   text-align: center;
  
@@ -61,10 +60,25 @@ hr {
 }
 
 h1 {
-  font-family: 'Passion One', cursive;
+  font-family: 'Passion One', cursive, 'sans-serif';
+  text-align: center;
 }
 
 h2 {
-  font-family: 'Passion One', cursive;
+  font-family: 'Passion One', cursive, 'sans-serif';
+  text-align: center;
 }
 
+.next-quote {
+  color:#4D0000;
+  font-family: 'Passion One', cursive, 'sans-serif';
+  font-size:24px;
+  text-align: center;
+}
+
+.footer-blurb{
+  font-family: 'Passion One', cursive, 'sans-serif';
+  font-style:italic;
+  text-align: right;
+  text-underline-position: 15px;
+}

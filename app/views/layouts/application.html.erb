@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <div class="col-xs-3">
+    <div class="col-sm-3">
       <div class="circle">
   <br />
   Forge
@@ -19,11 +19,11 @@
 </div>
     </div>
     
-    <div class="col-xs-5 slogan">
+    <div class="col-sm-5 slogan">
     Splurting out motivation to help forge a better you 
     </div>
     
-    <div class="col-xs-4 links">
+    <div class="col-sm-4 links">
     <%= link_to 'Contribute', '#' %>
     <%= link_to 'About', '#' %>
     </div>
@@ -33,7 +33,21 @@
 
   <br class="clear" />
 
+<div class="container">
 <%= yield %>
+</div>
+
+<div class="footer">
+  <div class="container">
+      <div class="col-xs-6">
+        <%= link_to "Gimmie Moar!!", "#", class: 'next-quote' %>
+      </div>
+      <div class="col-xs-6 footer-blurb">
+        Made by <a href="ofsixindustries.com">Jake</a><br />
+        Want to build your own Splurty Web App - <a href="http://thefirehoseproject.com">Learn how to code here</a>
+      </div>
+  </div>
+</div>
 
 </body>
 </html>
