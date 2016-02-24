@@ -1,4 +1,6 @@
 
+@import url(https://fonts.googleapis.com/css?family=Passion+One);
+
 .clear {
   clear:both;
 }
@@ -45,9 +47,19 @@
 }
 
 header {
-  border-top: 9px solid #222222;
+  border-top: 5px solid #222222;
 }
 
-hr{
+hr {
+  border-bottom:1px solid black;
   clear: both;
 }
+
+h1 {
+  font-family: 'Passion One', cursive;
+}
+
+h2 {
+  font-family: 'Passion One', cursive;
+}
+
