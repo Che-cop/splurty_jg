@@ -30,20 +30,25 @@
 }
 
 .slogan {
-  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
-  padding-top: 26px;
+  font-family: 'nexa_rust_slabblack_shadow_01';
+  font-size: 21px;
+  padding-top: 32px;
+  text-align: center;
 }
 
 .links {
-  padding-top: 26px;
+  font-family: 'Passion One', cursive;
+  padding-top: 28px;
+  text-align: center;
+ 
 
 }
 
 .links a{
   color: black;
-  font-size: 25px;
-  border-bottom: 2px solid#787878;
+  border-bottom: 1px solid#787878;
+  font-size: 25px; 
+ 
 }
 
 header {
