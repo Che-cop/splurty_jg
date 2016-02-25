@@ -1,11 +1,4 @@
 
-@import url(https://fonts.googleapis.com/css?family=Passion+One);
-
-
-
-
-
-
 .center{
   margin:0 auto;
   width:35%;
@@ -187,8 +180,7 @@ h2 {
 .next-quote a{
   color:#4D0000;
   font-family: 'hvd_bodedomedium';
-  font-size:18px;
-  text-align: left;
+  font-size:16px;
 }
 
 .footer a:hover{
@@ -223,8 +215,17 @@ h2 {
 
 .forms{
   font-family: 'uglyquaregular';
-  font-size:22px;
+  font-size:16px;
   margin-top:30px;
   padding-bottom: 15px;
 
 }
+
+.modal-title{
+  font-family: 'hvd_bodedomedium';
+  padding-top: 32px;
+  text-align: center;
+  font-size:18px;
+
+}
+
