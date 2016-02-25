@@ -1,35 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Splurty</title>
+  <title>Splarrrty</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <header>
-    <div class="col-sm-3">
-      <%= link_to root_path, class: 'logo' do %>
-        <div class="circle">
-          <br />
-          Forge
-          <br />
-          The Best
-          <br />
-          You
-          </div>
-        <% end %>
+            
+<%= link_to root_path, class: 'logo' do %>
+ <div class="col-sm-3">
+ <div class="center">
+   <div class="black-spot">
+      <br />SplArrrty! <br />
+   </div>
+    <div class="circle">
+            <div class="skull">
+                   <div class="mouth-crossbones">  
+                  </div>
+            </div>
         </div>
-    
+  </div> 
+  </div>
+
+<% end %>
     <div class="col-sm-5 slogan">
-    Splurting out motivation to help forge a better you 
+    Splarrrting out rum soaked life advice since 1716
     </div>
     
     <div class="col-sm-4 links">
-    <%= link_to 'Contribute', new_quote_path %>
+    <!-- Button trigger modal -->
+    <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
     <%= link_to 'About', about_path %>
     </div>
   </header>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <hr />
 
@@ -46,12 +76,12 @@
 
 <div class="footer">
   <div class="container">
-      <div class="col-xs-6">
-        <%= link_to "Gimmie Moar!!", root_path, class: 'next-quote' %>
+      <div class="col-xs-6 next-quote">
+        <%= link_to "Avast! Anotharr round says I!!", root_path %>
       </div>
       <div class="col-xs-6 footer-blurb">
-        Made by <a href="ofsixindustries.com">Jake</a><br />
-        Want to build your own Splurty Web App - <a href="http://thefirehoseproject.com">Learn how to code here</a>
+        Cobbled t'gether by ole <a target="_blank" href="http://www.jakeguymon.com">Jake</a> he self<br />
+        
       </div>
   </div>
 </div>

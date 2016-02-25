@@ -1,26 +1,131 @@
 
 @import url(https://fonts.googleapis.com/css?family=Passion+One);
 
+
+
+
+
+
+.center{
+  margin:0 auto;
+  width:35%;
+  margin-top:30px;
+}
+
+.black-spot {
+    z-index:10;
+    font-weight:bold;
+    font-family: 'uglyquaregular';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin: 19px 14px  auto;
+    text-align: center;
+    color: #f84342;
+    font-size: 13px;
+    line-height: 16px;
+    cursor: pointer;
+    transform:rotate(-12deg);
+    -ms-transform:rotate(-12deg); /* IE 9 */
+    -webkit-transform:rotate(-12deg); /* Opera, Chrome, and Safari */
+    text-shadow: 2px 0 0 #333, -2px 0 0 #333, 0 2px 0 #333, 0 -2px 0 #333, 1px 1px #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333;
+}
+.skull {
+  background-color: #fff;
+  border-radius: 20px;
+  height: 39px;
+  width: 39px;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  top: 25%;
+  -webkit-transform: translateY(-25%) translateX(-50%);
+          transform: translateY(-25%) translateX(-50%);
+}
+.skull::before {
+  background-color: #1e1e1e;
+  border-radius: 6px;
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  left: 25%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-30%);
+          transform: translateY(-50%) translateX(-30%);
+}
+.skull::after {
+  background-color: #1e1e1e;
+  border-radius: 6px;
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  right: 25%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(30%);
+          transform: translateY(-50%) translateX(30%);
+}
+.mouth-crossbones {
+  background-color: #fff;
+  border-radius: 1px;
+  height: 8px;
+  width: 14px;
+  position: absolute;
+  left: 50%;
+  bottom: -18%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+}
+.mouth-crossbones::before {
+  background-color: #fff;
+  border-radius: 1px;
+  content: "";
+  height: 4px;
+  width: 30px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateY(300%) translateX(-50%) rotate(25deg);
+          transform: translateY(300%) translateX(-50%) rotate(25deg);
+}
+.mouth-crossbones::after {
+  content: "";
+  background-color: #fff;
+  border-radius: 1px;
+  content: "";
+  height: 4px;
+  width: 30px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateY(300%) translateX(-50%) rotate(-25deg);
+          transform: translateY(300%) translateX(-50%) rotate(-25deg);
+}
+
+
+
+
+
+
 .clear {
   clear:both;
 }
 
-.my_headline_font_size {
-  font-size: 24px;
-}
-
 .circle {
+    z-index: 1;
     font-weight:bold;
     font-style: italic;
     position: relative;
     border-radius: 100%;
-    background: #f84342;
-    border: 1px solid black;
+    background: #1e1e1e;
+    border: 2px solid #f84342;
     width: 80px;
     height: 80px;
     margin: 10px 10px ;
     text-align: center;
-    color: #FFF;
+    color: #f84342;
     font-size: 15px;
     line-height: 16px;
     cursor: pointer;
@@ -30,15 +135,19 @@
 }
 
 .slogan {
-  font-family: 'nexa_rust_slabblack_shadow_01', 'Passion One', cursive, 'sans-serif';
-   padding-top: 32px;
+  font-family: 'hvd_bodedomedium';
+  padding-top: 32px;
   text-align: center;
+  font-size:24px;
+
 }
 
 .links {
-  font-family: 'Passion One', cursive, 'sans-serif';
+  font-family: 'uglyquaregular';
   padding-top: 28px;
+
   text-align: center;
+
  
 
 }
@@ -47,8 +156,14 @@
   color: black;
   border-bottom: 1px solid#787878;
   font-size: 25px; 
- 
-}
+  margin-right: 20px;
+ }
+
+ .links a:hover{
+  text-decoration: none;
+  color:#f84342; 
+  
+ }
 
 header {
   border-top: 5px solid #222222;
@@ -60,28 +175,34 @@ hr {
 }
 
 h1 {
-  font-family: 'Passion One', cursive, 'sans-serif';
+  font-family: 'hvd_bodedomedium';
   text-align: center;
 }
 
 h2 {
-  font-family: 'Passion One', cursive, 'sans-serif';
+  font-family: 'hvd_bodedomedium';
   text-align: center;
 }
 
-.next-quote {
+.next-quote a{
   color:#4D0000;
-  font-family: 'Passion One', cursive, 'sans-serif';
-  font-size:24px;
-  text-align: center;
+  font-family: 'hvd_bodedomedium';
+  font-size:18px;
+  text-align: left;
+}
+
+.footer a:hover{
+  text-decoration: none;
+  color:#f84342; 
 }
 
 .footer-blurb{
-  font-family: 'Passion One', cursive, 'sans-serif';
+  font-family: 'uglyquaregular';
   font-style:italic;
   text-align: right;
   text-underline-position: 15px;
 }
+
 
 .logo:hover {
   text-decoration: none;
@@ -89,7 +210,7 @@ h2 {
 
 .error {
   text-align: center;
-  height: 25px;
+  height: 45px;
   width: auto;
   border:2px solid #A94442;
   border-radius: 5px;
@@ -97,5 +218,13 @@ h2 {
 }
 
 .about{
-  font-family: 'Passion One', cursive, 'sans-serif';
+  font-family: 'uglyquaregular';
+}
+
+.forms{
+  font-family: 'uglyquaregular';
+  font-size:22px;
+  margin-top:30px;
+  padding-bottom: 15px;
+
 }

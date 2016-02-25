@@ -10,7 +10,8 @@ class QuotesController < ApplicationController
   def create
    @quote = Quote.create(quote_params)
     if @quote.invalid?
-      flash[:error] = '<strong>Could not save</strong> the data you entered is invalid'
+      flash[:error] = '<strong>Avast, ye bilge rat!</strong><br />
+       Them words be false to mine ear. Try yer tale again.'
     end  
     redirect_to root_path
   end
