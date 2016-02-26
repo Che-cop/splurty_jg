@@ -131,7 +131,7 @@
   font-family: 'hvd_bodedomedium';
   padding-top: 32px;
   text-align: center;
-  font-size:24px;
+  font-size:18px;
 
 }
 
@@ -148,7 +148,7 @@
 .links a{
   color: black;
   border-bottom: 1px solid#787878;
-  font-size: 25px; 
+  font-size: 18px; 
   margin-right: 20px;
  }
 
@@ -167,20 +167,24 @@ hr {
   clear: both;
 }
 
-h1 {
+.main-quote {
   font-family: 'hvd_bodedomedium';
   text-align: center;
 }
 
-h2 {
-  font-family: 'hvd_bodedomedium';
-  text-align: center;
-}
+
 
 .next-quote a{
-  color:#4D0000;
   font-family: 'hvd_bodedomedium';
   font-size:16px;
+}
+
+.footer{
+  margin-top:25px;
+}
+
+.footer a{
+  color:#4D0000;
 }
 
 .footer a:hover{
@@ -216,8 +220,7 @@ h2 {
 .forms{
   font-family: 'uglyquaregular';
   font-size:16px;
-  margin-top:30px;
-  padding-bottom: 15px;
+
 
 }
 
@@ -229,3 +232,33 @@ h2 {
 
 }
 
+.number{
+  font-family: 'uglyquaregular';
+  color:#4D0000;
+}
+
+.splarrrty{
+  font-family: 'uglyquaregular';
+  text-align: center;
+  margin:0 auto;
+}
+
+.name {
+  font-family: 'hvd_bodedomedium';
+  color:#4D0000
+
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}
+
+::selection {
+  background-color: #f84342;
+}
+ 
+ ::-moz-selection {
+  background: #f84342; 
+}

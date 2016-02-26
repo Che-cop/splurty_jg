@@ -1,94 +1,95 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Splarrrty</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <header>
-            
-<%= link_to root_path, class: 'logo' do %>
- <div class="col-sm-3">
- <div class="center">
-   <div class="black-spot">
-      <br />SplArrrty! <br />
-   </div>
-    <div class="circle">
-            <div class="skull">
-                   <div class="mouth-crossbones">  
-                  </div>
-            </div>
-        </div>
-  </div> 
-  </div>
 
-<% end %>
-    <div class="col-sm-5 slogan">
-    Splarrrting out rum soaked life advice since 1716
-    </div>
-    
-    <div class="col-sm-4 links">
-    <!-- Button trigger modal -->
-    <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
-    <%= link_to 'About', about_path %>
-    </div>
-  </header>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Add ye a new tale to the captain's log</h4>
-      </div>
-
-       <%= simple_form_for Quote.new do |f| %>
-      <div class="modal-body forms">
-    
-  <%= f.input :saying,  label: 'What tale was told?', placeholder: 'Yo, ho, yo, ho, a pirate\'s life for me' %>
-  <br />
-  <%= f.input :author, label: 'Who\'s words be these?', placeholder: 'Pirates Of The Caribbean' %>
-  <br />
+  <head>
   
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Nay</button>
-        <%=f.submit 'Aye', class: 'btn btn-primary' %>
+      <title>SplArrrty</title>
 
-      </div>
-      <% end %>
-    </div>
-  </div>
-</div>
+        <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+        <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+        <%= csrf_meta_tags %>
 
-
-  <hr />
-
-  <br class="clear" />
-
-<div class="container">
-  <% if flash[:error].present? %>
-    <div class="col-xs10 col-xs-offset-1 error alert-danger">
-      <%= flash[:error].html_safe %>
-    </div>
-  <% end %>   
-<%= yield %>
-</div>
-
-<div class="footer">
-  <div class="container">
-      <div class="col-xs-6 next-quote">
-        <%= link_to "Avast! Anotharr round says I!!", root_path %>
-      </div>
-      <div class="col-xs-6 footer-blurb">
-        Cobbled t'gether by ole <a target="_blank" href="http://www.jakeguymon.com">Jake</a> he self<br />
+  </head>
+    <body>
+      <header>                
+        <%= link_to root_path, class: 'logo' do %>
+          <div class="col-xs-3">
+            <div class="center">
+              <div class="black-spot">
+                <br />SplArrrty! <br />
+              </div>
+              <div class="circle">
+                <div class="skull">
+                  <div class="mouth-crossbones">  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        <% end %>
         
-      </div>
-  </div>
-</div>
+        <div class=" hidden-xs col-sm-5 slogan">SplArrrting out rum soaked life advice since 1716
+        </div>
+        
+        <div class="col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-4 links">
+        
+        <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
+        <%= link_to 'About', about_path %>
+        </div>
+      </header>
 
-</body>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Add ye a new tale to the captain's log</h4>
+          </div>
+
+           <%= simple_form_for Quote.new do |f| %>
+          <div class="modal-body forms">
+        
+      <%= f.input :saying,  label: 'What tale says ye?', placeholder: 'Yo, ho, yo, ho, a pirate\'s life for me' %>
+      <br />
+      <%= f.input :author, label: 'What scallywag told ye  that?', placeholder: 'Pirates Of The Caribbean' %>
+      
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Nay</button>
+            <%=f.submit 'Aye', class: 'btn btn-primary' %>
+
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+
+      <hr />
+
+      <br class="clear" />
+
+    <div class="container">
+      <% if flash[:error].present? %>
+        <div class="col-xs10 col-xs-offset-1 error alert-danger">
+          <%= flash[:error].html_safe %>
+        </div>
+      <% end %>   
+    <%= yield %>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+          <div class="col-xs-12 col-sm-6 next-quote">
+            <%= link_to "Avast! Anotharr round says I!!", root_path %>
+          </div>
+          <div class="col-xs-12 col-sm-6 footer-blurb">
+            Cobbled t'gether by ole <a target="_blank" href="http://www.jacobguymon.com">Jake</a> he self<br />
+            
+          </div>
+      </div>
+    </div>
+
+    </body>
 </html>
